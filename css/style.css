@@ -27,7 +27,117 @@
 }
 
 
+.my-button{
+    background-color: #0061FF;
+    color: white;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0 0.5em;
+    display: block;
+}
+
+
 /*---------------*/
+
+/* HEADER */
+header .header-top{
+    position:fixed;
+    right:0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    padding: 1.5em;
+}
+
+.header-top nav{
+    
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.my-row img{
+    height: 100%;
+    display: block;
+}
+
+header .header-top ul.my-row{
+    list-style: none;
+    justify-content: space-between;
+    align-content: center;
+    width: calc(100% / 3);
+    
+}
+
+header .header-top ul.my-row li{
+    margin: 0 1em;
+    font-size: 1.1em;
+}
+
+header .header-top ul.my-row li a, header .header-top ul.my-row li a *:not(button.my-button){
+    text-decoration: none;
+    color: black ;
+}
+
+
+
+header .header-top ul.my-row li.img-container{
+    max-height: 100%;
+    min-height: 1.1em;
+}
+
+
+
+.header-bottom{
+    margin-top: 80px;
+    /* height: 120vh; */
+    background-color: #B4D0E7;
+}
+
+.container.my-row{
+    position: relative;
+    top: 4.5em;
+    left: 0;
+}
+
+.header-bottom h1{
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.header-bottom aside{
+    width: 30%;
+    font-size: 1.1em;
+}
+
+.header-bottom aside p .my-button{
+    margin: 1em 0;
+   
+
+}
+
+.header-bottom aside div i{
+    font-size: 3em;
+    position: relative;
+    top: 1em;
+    left: 0;
+
+}
+
+.header-bottom .img-container{
+    width: 70%;
+}
+
+.header-bottom .img-container img{
+    width: 100%;
+}
+
+/* HEADER */
 
 /*-------DEBUG---------*/
 
@@ -40,13 +150,13 @@
 .debug header{
     background-color: goldenrod;
     border: 3px dotted green;
-    min-height: 30vh;
+    min-height: 130vh;
 }
 
 .debug main{
     background-color: crimson;
     border: 3px solid blue;
-    min-height: 600vh;
+    min-height: 500vh;
 }
 
 .debug footer{
