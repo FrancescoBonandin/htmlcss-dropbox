@@ -60,6 +60,11 @@ ul{
     display: block;
 }
 
+.my-button.alt{
+    background-color: transparent;
+    color: black;
+}
+
 
 /*---------------*/
 
@@ -135,6 +140,10 @@ header .header-top ul.my-row li.img-container{
     font-size: 1.1em;
 }
 
+.header-bottom a{
+    text-decoration: none;
+}
+
 .header-bottom aside p .my-button{
     margin: 1em 0;
    
@@ -206,7 +215,6 @@ main section:nth-child(1) div.my-row.top-row{
     margin:0 -1.5em;
 }
 
-
 main section:nth-child(1) div.my-row .col-1-3 > h5, .special-col > h5{
     text-align: center;
     font-size: 0.8em;
@@ -238,8 +246,6 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
     color: #005eff;
 }
 
-
-
 .special-col{
     width: calc(100% - 3em);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -255,7 +261,6 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
     margin-top: 3em;
 }
 
-
 .special-col-right{
     width: calc((100% / 3));
     height: 100%;
@@ -266,8 +271,72 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 
 
 
+.img-aside-text{
+    margin-top: 5em;
+}
+.img-aside-text .container-small.my-row{
+    margin: 0 -1.5em;
+}
+
+.img-aside-text h3{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.img-aside-text aside{
+    width: calc(40% - 3em);
+    font-size: 1.1em;
+    padding: 3em 1.5em;
+}
+
+.img-aside-text a{
+    text-decoration: none;
+}
+
+.img-aside-text aside .my-button{
+    margin: 1em 0;
+
+}
+
+.img-aside-text .img-container{
+    width: calc(60% - 3em);
+    margin: 0 1.5em;
+}
+
+.img-aside-text .img-container img{
+    width: 100%;
+}
+
 
 /* SECTION 1 */
+
+/* Section 2 */
+
+
+
+main section:nth-child(2) div.my-row{
+    justify-content: space-between;
+    width: 100%;
+    margin:0 -1.5em;
+}
+
+main section:nth-child(2) div.my-row .col-1-3{
+    text-align: center;
+    font-size: 0.8em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main section:nth-child(2) div.my-row .col-1-3 > div, .special-col .my-row{
+    padding: 1em;
+}
+
+main section:nth-child(2) div.my-row .col-1-3 > div *, .special-col > div *{
+    margin-bottom: 1.2em;
+}
+
+
+/* Section 2 */
 
 
 
