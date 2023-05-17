@@ -44,7 +44,6 @@ ul{
 
 .col-1-3{
     width: calc((100% / 3) - 3em) ;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 0 1.5em;
 }
 
@@ -311,9 +310,15 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 
 /* SECTION 1 */
 
-/* Section 2 */
+/* SECTION 2 */
 
+.features-display{
+    margin-top: 4em;
+}
 
+.features-display h2{
+    margin-bottom: 2em;
+}
 
 main section:nth-child(2) div.my-row{
     justify-content: space-between;
@@ -321,22 +326,32 @@ main section:nth-child(2) div.my-row{
     margin:0 -1.5em;
 }
 
-main section:nth-child(2) div.my-row .col-1-3{
-    text-align: center;
-    font-size: 0.8em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.features-display .img-container{
+    width:100%;
+
 }
 
-main section:nth-child(2) div.my-row .col-1-3 > div, .special-col .my-row{
-    padding: 1em;
+.features-display .img-container img{
+    width: 100%;
 }
 
-main section:nth-child(2) div.my-row .col-1-3 > div *, .special-col > div *{
-    margin-bottom: 1.2em;
+main section:nth-child(2) div.my-row .col-1-3:nth-child(n + 4){
+    margin-top: 1.5em;
 }
 
 
 /* Section 2 */
+
+/* Section 3 */
+
+
+
+
+
+
+
+
+/* Section 3 */
 
 
 
