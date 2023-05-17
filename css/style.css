@@ -467,6 +467,10 @@ main section:nth-child(3) .container-small a{
 /* Section 3 */
 
 /* Section 4 */
+section:nth-child(4){
+    margin: 4em 0 0 0;
+}
+
 section:nth-child(4) .container-small h2{
     margin-bottom: 2em;
 }
@@ -489,30 +493,39 @@ section:nth-child(4) .q.my-row:nth-child(odd){
 /* MAIN */
 
 
-
-
-/*-------DEBUG---------*/
-
-.debug{
-
-    background-color: aqua;
-    border: 3px dashed red;
+/* FOOTER */
+footer{
+    padding: 3em;
+    background-color:#000000 ;
+    margin: 4em 0 0 0;
 }
 
-/* .debug header{
-    background-color: goldenrod;
-    border: 3px dotted green;
-    min-height: 130vh;
-} */
-
-/* .debug main{
-    background-color: crimson;
-    border: 3px solid blue;
-    min-height: 500vh;
-} */
-
-.debug footer{
-    background-color: darkorange;
-    border: 3px dashed blueviolet;
-    min-height: 70vh;
+.footer-top.my-row{
+    justify-content: space-between;
+    margin:5em -1em;
 }
+
+.footer-top.my-row > .col-list{
+    width: calc((100% / 5) - 2em);
+    margin: 0 1em;
+    color: white;
+}
+
+.footer-top.my-row > .col-list h4{
+  font-size: 2em;
+}
+
+.footer-top.my-row > .col-list > li{
+  margin-bottom: 1em;
+}
+
+.footer-bottom{
+    color:grey;
+}
+
+.footer-bottom > hr{
+    border:1px solid grey;
+}
+
+
+/* FOOTER */
