@@ -52,6 +52,7 @@ ul{
     background-color: #0061FF;
     color: white;
     border-radius: 0;
+    border: 0;
     text-transform: capitalize;
     font-size: 1em;
     font-weight: normal;
@@ -86,7 +87,6 @@ header .header-top{
     background-color: #FFFFFF;
     padding: 1.5em;
     box-shadow: 0 1px 10px 2px lightgrey ;
-    flex-wrap: nowrap;
 }
 
 .header-top nav.my-row{
@@ -105,7 +105,7 @@ header .header-top{
 
 header .header-top ul.my-row{
     justify-content: space-between;
-    width: calc(100% / 3);  
+    width: calc(100% / 3 + 2em);  
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -114,6 +114,12 @@ header .header-top ul.my-row{
     margin: 0 1em;
     font-size: 1.1em;
     position: relative;
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.header-top a > .my-button{
+    margin: auto;
 }
 
 .header-top ul.my-row li a, .header-top ul.my-row li a *:not(button.my-button){
@@ -143,10 +149,11 @@ header .header-top ul.my-row{
     height: 100px;
 }
 
-.header-top ul.my-row li a:hover + .dropdown-menù, .dropdown-menù:hover, .dropdown-menù li:hover{
+.header-top ul.my-row li a:hover + .dropdown-menù{
     height: 300px;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .header-top ul.my-row li a:hover + .dropdown-menù li{
@@ -526,14 +533,15 @@ div.center > *{
     border-bottom: 1px solid black;
 }
 
-/* menù */
+/* menù tendina */
 .q.my-row i{
     border-radius: 50%;
-    padding:0 3px;
+    padding:0 4px;
     display: block;
     border: 1px solid lightgrey;
     cursor: pointer;
     transform: rotate(0deg);
+    line-height: 24px;
 
     transition-property: transform ;
     transition-duration:0.2s ;
@@ -547,8 +555,8 @@ div.center > *{
     left: calc(100% - 1px);
     top: 50%;
     transform: translate(-100%, -50%);
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     opacity: 0;
     cursor: pointer;
@@ -564,6 +572,7 @@ div.center > *{
 }
 
 .menù{
+
     align-self: flex-end;
     width: 100%;
     overflow: hidden;
@@ -578,11 +587,11 @@ div.center > *{
 
 .check-layer:checked ~ .menù{
    height: 20vh;
-   padding: 3vh 0;
+   padding: 2vh;
 }
 
 
-/* menù */
+/* menù tendina */
 
 
 /* Section 4 */
