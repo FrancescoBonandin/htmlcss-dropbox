@@ -86,32 +86,34 @@ header .header-top{
     background-color: #FFFFFF;
     padding: 1.5em;
     box-shadow: 0 1px 10px 2px lightgrey ;
+    flex-wrap: nowrap;
 }
 
-.header-top nav{
+.header-top nav.my-row{
     width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: nowrap;
-
+    align-items: center;
+    margin: 0 -1em;
 }
 
-.my-row img{
-    height: 100%;
+.header-top .my-row img{
     display: block;
+    object-fit: scale-down;
+    height: 100%;
 }
 
 header .header-top ul.my-row{
     justify-content: space-between;
-    align-content: center;
-    width: calc(100% / 3);
-    
-    
+    width: calc(100% / 3);  
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .header-top ul.my-row li{
     margin: 0 1em;
     font-size: 1.1em;
+    position: relative;
 }
 
 .header-top ul.my-row li a, .header-top ul.my-row li a *:not(button.my-button){
@@ -120,15 +122,47 @@ header .header-top ul.my-row{
 }
 
 
-.header-top ul.my-row li.img-container{
-    max-height: 100%;
-    min-height: 1.1em;
+/* dropdown menù */
+.header-top ul.my-row li > .dropdown-menù{
+    position: absolute;
+    top:100%;
+    left: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px 2px lightgrey ;
+    transform: translate(-100%, 0);
+    width: 100%;
+    height: 0px;
+    display: none;
 }
 
+.header-top ul.my-row li > .dropdown-menù li{
 
+    text-align: center;
+    border-top: 0px solid grey;
+    border-bottom: 0px solid grey;
+    height: 100px;
+}
+
+.header-top ul.my-row li a:hover + .dropdown-menù, .dropdown-menù:hover, .dropdown-menù li:hover{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top ul.my-row li a:hover + .dropdown-menù li{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+/* dropdown-menù */
+
+.header-bottom .my-row img{
+    height: 100%;
+    display: block;
+}
 
 .header-bottom{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .header-bottom .container.my-row{
@@ -187,11 +221,11 @@ main{
 
 /* SECTION 1 */
 
-.service-plan .radio-container{
+#service-plan .radio-container{
     margin: 2em 0;
 }
 
-.service-plan input{
+#service-plan input{
     width: 16px;
     height: 16px;
     border: 1px solid lightgray ;
@@ -201,39 +235,39 @@ main{
     transition: 0.2s all linear;
 }
 
-.service-plan label{
+#service-plan label{
     margin-left: 0.5em;
 }
 
-.service-plan input:nth-of-type(2){
+#service-plan input:nth-of-type(2){
     margin-left: 2em; 
 }
 
-.service-plan input:checked{
+#service-plan input:checked{
  border: 4px solid #0061FF;
 }
 
-.service-plan div.my-row.top-row{
+#service-plan div.my-row.top-row{
     justify-content: space-between;
     width: 100%;
     margin:0 -1.5em;
 }
 
-.service-plan div.my-row .col-1-3 > h5, .special-col > h5{
+#service-plan div.my-row .col-1-3 > h5, .special-col > h5{
     text-align: center;
     font-size: 0.8em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.service-plan div.my-row .col-1-3{
+#service-plan div.my-row .col-1-3{
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.service-plan div.my-row .col-1-3 > div, .special-col .my-row{
+#service-plan div.my-row .col-1-3 > div, .special-col .my-row{
     padding: 1em;
 }
 
-.service-plan div.my-row .col-1-3 > div *, .special-col > div *{
+#service-plan div.my-row .col-1-3 > div *, .special-col > div *{
     margin-bottom: 1.2em;
 }
 
@@ -324,35 +358,35 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 
 /* SECTION 2 */
 
-.features-display{
+#features-display{
     margin: 4em 0;
 }
 
 
-.features-display h2{
+#features-display h2{
     margin-bottom: 2em;
 }
 
-.features-display div.my-row{
+#features-display div.my-row{
     justify-content: space-between;
     width: 100%;
     margin:0 -1.5em;
 }
 
-.features-display .img-container{
+#features-display .img-container{
     width:100%;
 
 }
 
-.features-display .img-container img{
+#features-display .img-container img{
     width: 100%;
 }
 
-main section:nth-child(2) div.my-row .col-1-3:nth-child(n + 4){
+#features-display div.my-row .col-1-3:nth-child(n + 4){
     margin-top: 1.5em;
 }
 
-.features-display .container-small > h2{
+#features-display .container-small > h2{
     margin: 2em 0;
 }
 
@@ -360,21 +394,21 @@ main section:nth-child(2) div.my-row .col-1-3:nth-child(n + 4){
 
 /* Section 3 */
 
-.partners{
+#partners{
     background-color: #B4D0E7;
 }
 
-.partners div.my-row{
+#partners div.my-row{
     margin: 0;
 }
 
-.partners div.my-row > .center{
+#partners div.my-row > .center{
     background-color: #f5f5f5;
     padding: 2em;
 }
 
 
-.partners div.my-row > .left, .partners div.my-row > .center, .partners div.my-row > .right{
+#partners div.my-row > .left, #partners div.my-row > .center, #partners div.my-row > .right{
     width:calc(100% / 3);
     height:calc(100vw / 3);
 }
@@ -401,7 +435,8 @@ div.center > *{
 }
 
 .card > img{
-  width: 70%;
+  width: 50%;
+  height: 100%;
   object-fit: scale-down;
   filter: invert(1);
   margin: 0 auto;
@@ -442,22 +477,22 @@ div.center > *{
     background-color: #FFD830;
 }
 
-.partners .container-small{
+#partners .container-small{
     padding-top: 4em;
     padding-bottom: 4em;
 }
-.partners .container-small .my-row{
+#partners .container-small .my-row{
     justify-content: space-between;
     padding: 2em 0;
 }
 
-.partners .container-small h2{
+#partners .container-small h2{
 
     color: #61072A;
     width: 50%;
 }
 
-.partners .container-small a{
+#partners .container-small a{
     position: relative;
     top:1em;
     left: 10%;
@@ -467,29 +502,30 @@ div.center > *{
 /* Section 3 */
 
 /* Section 4 */
-.faq{
+#faq{
     margin: 4em 0 0 0;
 }
 
-.faq .container-small h2{
+#faq .container-small h2{
     margin-bottom: 2em;
 }
 
-.faq .container-small > .my-row{
+#faq .container-small > .my-row{
     flex-direction: column;
 }
 
-.faq .q.my-row{
+#faq .q.my-row{
     justify-content: space-between;
     padding: 2em 0;
     position: relative;
 
 }
 
-.faq .q.my-row:nth-child(odd){
+#faq .q.my-row:nth-child(odd){
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 /* menù */
 .q.my-row i{
     border-radius: 50%;
