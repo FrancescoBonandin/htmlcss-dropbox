@@ -73,6 +73,10 @@ ul{
 /*---------------*/
 
 /* HEADER */
+header{
+    background-color: #B4D0E7;
+}
+
 header .header-top{
     position:fixed;
     right:0;
@@ -81,6 +85,7 @@ header .header-top{
     z-index: 2;
     background-color: #FFFFFF;
     padding: 1.5em;
+    box-shadow: 0 1px 10px 2px lightgrey ;
 }
 
 .header-top nav{
@@ -99,6 +104,7 @@ header .header-top ul.my-row{
     justify-content: space-between;
     align-content: center;
     width: calc(100% / 3);
+    
     
 }
 
@@ -263,6 +269,8 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 .special-col-right{
     width: calc((100% / 3));
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .special-col .my-row{
     align-content: flex-start;
