@@ -430,11 +430,12 @@ div.center > *{
 }
 
 .partners .container-small{
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 .partners .container-small .my-row{
     justify-content: space-between;
+    padding: 2em 0;
 }
 
 .partners .container-small h2{
@@ -495,13 +496,18 @@ div.center > *{
     position: absolute;
     z-index: 1;
     left: calc(100% - 1px);
-    top: 44px;
+    top: 50%;
     transform: translate(-100%, -50%);
     width: 22px;
     height: 22px;
     border-radius: 50%;
     opacity: 0;
     cursor: pointer;
+}
+
+.check-layer:checked{
+    position: absolute;
+    top: calc(50% - 10vh);
 }
 
 .check-layer:checked ~ i{
@@ -523,7 +529,7 @@ div.center > *{
 
 .check-layer:checked ~ .menù{
    height: 20vh;
-   padding: 1vh 0;
+   padding: 3vh 0;
 }
 
 
