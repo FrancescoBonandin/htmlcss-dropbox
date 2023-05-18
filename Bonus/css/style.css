@@ -110,11 +110,10 @@ header .header-top ul.my-row{
     flex-wrap: nowrap;
 }
 
-.header-top ul.my-row li{
+.header-top nav > ul.my-row > li{
     margin: 0 1em;
     font-size: 1.1em;
     position: relative;
-    width: calc(100% / 4);
     text-align: center;
 }
 
@@ -132,33 +131,22 @@ header .header-top ul.my-row{
 .header-top ul.my-row li > .dropdown-menù{
     position: absolute;
     top:100%;
-    left: 100%;
+    left: 0;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 10px 2px lightgrey ;
-    transform: translate(-100%, 0);
-    width: 100%;
-    height: 0px;
     display: none;
 }
 
 .header-top ul.my-row li > .dropdown-menù li{
-
-    text-align: center;
     border-top: 0px solid grey;
     border-bottom: 0px solid grey;
-    height: 100px;
+    padding: 1em;
 }
 
 .header-top ul.my-row li a:hover + .dropdown-menù{
-    height: 300px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.header-top ul.my-row li a:hover + .dropdown-menù li{
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* dropdown-menù */
