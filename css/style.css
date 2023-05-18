@@ -171,6 +171,11 @@ header .header-top ul.my-row{
     width: 100%;
 }
 
+.down-arrow > a, .down-arrow > a:hover, .down-arrow > a:active, .down-arrow > a:visited{
+    color: #000000;
+    cursor: pointer;
+}
+
 /* HEADER */
 
 /* MAIN */
