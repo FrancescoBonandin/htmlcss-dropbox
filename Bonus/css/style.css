@@ -64,6 +64,7 @@ ul{
     background-color: white;
     color: black;
     padding: 0.5em 0.5em;
+    border: 1px solid gray;
 }
 
 .my-button.alt.n2{
@@ -546,7 +547,6 @@ div.center > *{
 
 #partners input[id=left-1]:checked ~ .left.my-row > .bg-card-1{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=left-2]{
@@ -556,7 +556,6 @@ div.center > *{
 
 #partners input[id=left-2]:checked ~ .left.my-row > .bg-card-2{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=left-2]:checked ~ .center.back.left-top-right{
@@ -570,7 +569,6 @@ div.center > *{
 
 #partners input[id=left-3]:checked ~ .left.my-row > .bg-card-3{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=left-3]:checked ~ .center.back.left-bottom-left{
@@ -584,7 +582,6 @@ div.center > *{
 
 #partners input[id=left-4]:checked ~ .left.my-row > .bg-card-4{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=left-4]:checked ~ .center.back.left-bottom-right{
@@ -599,7 +596,6 @@ div.center > *{
 
 #partners input[id=right-1]:checked ~ .right.my-row > .bg-card-1{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=right-1]:checked ~ .center.back.right-top-left{
@@ -613,7 +609,6 @@ div.center > *{
 
 #partners input[id=right-2]:checked ~ .right.my-row > .bg-card-2{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=right-2]:checked ~ .center.back.right-top-right{
@@ -627,7 +622,6 @@ div.center > *{
 
 #partners input[id=right-3]:checked ~ .right.my-row > .bg-card-3{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=right-3]:checked ~ .center.back.right-bottom-left{
@@ -641,7 +635,6 @@ div.center > *{
 
 #partners input[id=right-4]:checked ~ .right.my-row > .bg-card-4{
     border: 10px solid rgba(255, 255, 255, 0.6);
-
 }
 
 #partners input[id=right-4]:checked ~ .center.back.right-bottom-right{
