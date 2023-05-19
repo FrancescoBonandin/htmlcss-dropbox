@@ -128,8 +128,8 @@ header .header-top ul.my-row{
 }
 
 
-/* dropdown menù */
-.header-top ul.my-row li > .dropdown-menù{
+/* dropdown menu */
+.header-top ul.my-row li > .dropdown-menu{
     position: absolute;
     top:100%;
     left: 0;
@@ -138,19 +138,19 @@ header .header-top ul.my-row{
     display: none;
 }
 
-.header-top ul.my-row li > .dropdown-menù li{
+.header-top ul.my-row li > .dropdown-menu li{
     border-top: 0px solid grey;
     border-bottom: 0px solid grey;
     padding: 1em;
 }
 
-.header-top ul.my-row li a:hover + .dropdown-menù{
+.header-top ul.my-row li a:hover + .dropdown-menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* dropdown-menù */
+/* dropdown-menu */
 
 .header-bottom .my-row img{
     height: 100%;
@@ -407,7 +407,7 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 
 #partners div.my-row > .left, #partners div.my-row > .center, #partners div.my-row > .right{
     width:calc(100% / 3);
-    height:calc(100vw / 3);
+    aspect-ratio:1;
 }
 
 
@@ -669,7 +669,7 @@ div.center > *{
     border-bottom: 1px solid black;
 }
 
-/* menù tendina */
+/* menu tendina */
 .q.my-row i{
     border-radius: 50%;
     padding:0 4px;
@@ -707,7 +707,7 @@ div.center > *{
     transform: rotate(180deg);
 }
 
-.menù{
+.menu{
     align-self: flex-end;
     width: 100%;
     overflow: hidden;
@@ -720,11 +720,11 @@ div.center > *{
     transition-timing-function: ease-in-out ;
 }
 
-.check-layer:checked ~ .menù{
+.check-layer:checked ~ .menu{
    height: 20vh;
    padding: 1em;
 }
-/* menù tendina */
+/* menu tendina */
 /* Section 4 */
 /* MAIN */
 
