@@ -11,6 +11,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 
+#service-plan, #features-display, #partners, #faq{
+    padding-top: 10vh;
+}
+
 h2{
     font-size: 2.5em;
 }
@@ -105,8 +109,6 @@ header .header-top{
 }
 
 header .header-top ul.my-row{
-    justify-content: space-between;
-    width: calc(100% / 3 + 2em);  
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -141,13 +143,30 @@ header .header-top ul.my-row{
 .header-top ul.my-row li > .dropdown-menu li{
     border-top: 0px solid grey;
     border-bottom: 0px solid grey;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-top ul.my-row li > .dropdown-menu li a{
+    width: 100%;
+    height: 100%;
+    display: block;
     padding: 1em;
 }
 
-.header-top ul.my-row li a:hover + .dropdown-menu{
+.header-top ul.my-row li:hover > .dropdown-menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.header-top ul.my-row li:hover > .dropdown-menu li:hover{
+    background-color: #005eff;
+}
+
+.header-top ul.my-row li:hover > .dropdown-menu li:hover a{
+    color: white; 
+
 }
 
 /* dropdown-menu */
@@ -209,12 +228,6 @@ header .header-top ul.my-row{
 /* HEADER */
 
 /* MAIN */
-main{
-    padding-top: 8em;
-    background-color: #FFFFFF;
-}
-
-
 /* SECTION 1 */
 
 #service-plan .radio-container{
@@ -354,13 +367,12 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
 
 /* SECTION 2 */
 
-#features-display{
-    margin: 4em 0;
+#features-display h2:first-of-type{
+    margin-bottom:2em;
 }
 
-
-#features-display h2{
-    margin-bottom: 2em;
+#features-display h2:last-of-type{
+    margin:2em;
 }
 
 #features-display div.my-row{
@@ -381,17 +393,15 @@ i.fa-check.fa-solid.fa-sm.fa-sharp{
     margin-top: 1.5em;
 }
 
-#features-display .container-small > h2{
-    margin: 2em 0;
-}
-
 /* Section 2 */
 
 /* Section 3 */
 
-#partners{
+#partners .backgrounder{
+    width: 100%;
     background-color: #B4D0E7;
 }
+
 
 #partners div.my-row{
     margin: 0;
