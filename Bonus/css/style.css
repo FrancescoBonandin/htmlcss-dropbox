@@ -428,7 +428,6 @@ div.center > *{
 .card{
     width: 50%;
     height: 50%;
-
     border: 0;
 
     transition-property: border;
@@ -716,14 +715,13 @@ div.center > *{
 }
 
 .menù{
-
     align-self: flex-end;
     width: 100%;
     overflow: hidden;
     height: 0px;
-    padding: 0px;
+    padding: 0 1em;
 
-    transition-property: all ;
+    transition-property: all;
     transition-duration:0.2s ;
     transition-delay: 0s;
     transition-timing-function: ease-in-out ;
@@ -731,13 +729,9 @@ div.center > *{
 
 .check-layer:checked ~ .menù{
    height: 20vh;
-   padding: 2vh;
+   padding: 1em;
 }
-
-
 /* menù tendina */
-
-
 /* Section 4 */
 /* MAIN */
 
